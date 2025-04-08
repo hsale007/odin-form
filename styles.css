@@ -1,0 +1,163 @@
+@font-face {
+  font-family: "UnifrakturMaguntia";
+  src: url(fonts/UnifrakturMaguntia-Regular.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Emily's Candy";
+  src: url(fonts/EmilysCandy-Regular.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  font-family: "poppins", system-ui, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+section {
+  display: flex;
+}
+
+.left-sidebar {
+  width: 40%;
+  position: relative;
+}
+
+img {
+  width: 100%;
+}
+
+.left-sidebar .header h1 {
+  font-size: 3rem;
+  font-family: "Emily's Candy";
+  color: #01aac4;
+}
+
+.header {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background-color: grey;
+  text-align: center;
+  opacity: 0.6;
+}
+
+.credit {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  color: white;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+.credit a {
+  color: white;
+}
+
+.right-sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.right-sidebar > .content {
+  margin-left: 25px;
+}
+
+.odin-form div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.odin-form legend {
+  position: absolute;
+  font-size: 1.1rem;
+  margin-left: 8px;
+  top: 2%;
+}
+
+.odin-form p {
+  width: 100%;
+}
+
+form > fieldset > div > p {
+  margin: 10px;
+}
+
+.submit {
+  margin-left: 25px;
+}
+
+label,
+input {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 80%;
+}
+
+input {
+  padding: 10px;
+  font-size: 1.1rem;
+}
+
+input:valid {
+  border-color: green;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+.submit {
+  display: flex;
+  margin-top: 30px;
+  flex-direction: column;
+}
+
+.submit button {
+  width: 30%;
+  padding: 10px 30px;
+  background-color: #bf426c;
+  font-family: "Emily's Candy";
+  font-size: 1.1rem;
+}
+
+.submit button:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.submit a {
+  color: #bf426c;
+  text-decoration: none;
+}
+
+fieldset {
+  border: none;
+  box-shadow: 0 15px 30px 1px grey;
+  background: rgba(255, 255, 255, 0.9);
+  position: relative;
+  padding: 40px 20px;
+  width: 100%;
+}

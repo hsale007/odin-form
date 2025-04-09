@@ -27,11 +27,11 @@
     <section class="right-sidebar">
       <div class="content">
         <p>
-          This is not a <em>service</em>. If it was look much better than this
-          looks but I did try my best.
-          <br />
-          Sign up if you want to or don't.
+          This is not a <em>real service</em>. If it was it will look much
+          better than this but I did try my best. Hopefully that is enough to
+          convice you to sign up for my <strong>FAKE</strong> service.
         </p>
+        <h2>Sign up if you want to or don't.</h2>
       </div>
       <div class="odin-form">
         <form action="#" method="post">
@@ -39,8 +39,16 @@
             <legend>Let's Do This</legend>
             <div class="name">
               <p>
-                <label for="first-name">FIRST NAME</label>
-                <input type="text" id="first-name" name="first-name" />
+                <label for="first-name"
+                  >FIRST NAME <span aria-label="required">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  pattern="[a-zA-Z]+"
+                  required
+                />
               </p>
               <p>
                 <label for="last-name">LAST NAME</label>
@@ -49,8 +57,16 @@
             </div>
             <div class="contact-info">
               <p>
-                <label for="contact-email">EMAIL</label>
-                <input type="email" id="contact-email" name="contact-email" />
+                <label for="contact-email"
+                  >EMAIL <span aria-label="required">*</span></label
+                >
+                <input
+                  type="email"
+                  id="contact-email"
+                  name="contact-email"
+                  required
+                  placeholder="test@example.com"
+                />
               </p>
               <p>
                 <label for="contact-number">PHONE</label>
@@ -59,15 +75,27 @@
             </div>
             <div class="password">
               <p>
-                <label for="password">PASSWORD</label>
-                <input type="password" id="password" name="password" />
+                <label for="password"
+                  >PASSWORD <span aria-label="required">*</span></label
+                >
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  minlength="4"
+                  maxlength="16"
+                  required
+                />
               </p>
               <p>
-                <label for="password-confirmation">CONFIRM PASSWORD</label>
+                <label for="password-confirmation"
+                  >CONFIRM PASSWORD <span aria-label="required">*</span></label
+                >
                 <input
                   type="password"
                   id="password-confirmation"
                   name="password-confirmation"
+                  required
                 />
               </p>
             </div>
@@ -78,51 +106,6 @@
           </div>
         </form>
       </div>
-      <!-- <div class="odin-form">
-        <form action="#" method="post">
-          <fieldset>
-            <legend>Let's Do This</legend>
-            <div class="name">
-              <p>
-                <label for="first-name">FIRST NAME</label>
-                <input type="text" id="first-name" name="first-name" />
-              </p>
-              <p>
-                <label for="last-name">LAST NAME</label>
-                <input type="text" id="last-name" name="last-name" />
-              </p>
-            </div>
-            <div class="contact-info">
-              <p>
-                <label for="contact-email">EMAIL</label>
-                <input type="email" id="contact-email" name="contact-email" />
-              </p>
-              <p>
-                <label for="contact-number">PHONE</label>
-                <input type="tel" id="contact-number" name="contact-number" />
-              </p>
-            </div>
-            <div class="password">
-              <p>
-                <label for="password">PASSWORD</label>
-                <input type="password" id="password" name="password" />
-              </p>
-              <p>
-                <label for="password-confirmation">CONFIRM PASSWORD</label>
-                <input
-                  type="password"
-                  id="password-confirmation"
-                  name="password-confirmation"
-                />
-              </p>
-            </div>
-          </fieldset>
-          <div class="submit">
-            <button type="submit">Create Account</button>
-            <p>Already have an account? <a href="#">Log in</a></p>
-          </div>
-        </form>
-      </div> -->
     </section>
   </body>
 </html>
